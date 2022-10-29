@@ -1,0 +1,18 @@
+[package]
+name = "argo_oracle"
+version = "0.0.0"
+upgrade_policy = "compatible"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+Pyth = { local = "../pyth-crosschain/aptos/contracts" }
+Switchboard = { local = "../sbv2-aptos/move/switchboard" }
+argo_safe = { local = "../argo_safe" }
+
+[addresses]
+argo_oracle = "_"
+wormhole = "0x5bc11445584a763c1fa7ed39081f1b920954da14e04b32440cba863d03e19625"
+deployer = "0xb31e712b26fd295357355f6845e77c888298636609e93bc9b05f0f604049f434"
+pyth = "0x7e783b349d3e89cf5931af376ebeadbfab855b3fa239b7ada8f5a92fbea6b387"

@@ -1,0 +1,11 @@
+[package]
+name = "argo_safe"
+version = "0.0.0"
+upgrade_policy = "compatible"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+
+[addresses]
+argo_safe = "_"
+

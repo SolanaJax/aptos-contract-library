@@ -1,0 +1,12 @@
+[package]
+name = "liquidator_aux"
+version = "0.0.0"
+upgrade_policy = "compatible"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+argo_engine = { local = "../argo_engine" }
+aux = { local = "../aux-exchange/aptos/contract/aux/" }
+
+[addresses]
+liquidator_aux = "0x98298d34bcf896c663e069c464754e0cfd36b50e21eedd8db0e4189168057cb7"

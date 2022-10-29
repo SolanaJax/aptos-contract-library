@@ -1,0 +1,14 @@
+[package]
+name = "argo_engine"
+version = "0.0.0"
+upgrade_policy = "compatible"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "25696fd266498d81d346fe86e01c330705a71465" }
+argo_core = { local = "../argo_core" }
+argo_safe = { local = "../argo_safe" }
+usda = { local = "../usda" }
+
+[addresses]
+argo_engine = "_"
+
