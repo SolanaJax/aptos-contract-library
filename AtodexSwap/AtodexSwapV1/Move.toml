@@ -1,0 +1,14 @@
+[package]
+name = "AtodexSwapV1"
+version = "1.0.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "83641d3f083762f31700060e5e95fbb1cbc28bf0" }
+LPCoin = { local= "../LPCoin" }
+LPResourceAccount = { local= "../LPResourceAccount" }
+U256 = { local= "../u256" }
+UQ64x64 = { local= "../uq64x64" }
+
+[addresses]
+SwapDeployer = "0xac03e6ecba29a245c2d4af18c10e40e36ef085a3da6e3fd36b383bab858be00f"
+ResourceAccountDeployer = "0x6b1a0749af672861c5dfd301dcd7cf85973c970d6088bae4f4a34e2effcb9e5e"

@@ -1,0 +1,10 @@
+[package]
+name = "UQ64x64"
+version = "0.3.6"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "83641d3f083762f31700060e5e95fbb1cbc28bf0" }
+
+[addresses]
+uq64x64 = "0xac03e6ecba29a245c2d4af18c10e40e36ef085a3da6e3fd36b383bab858be00f"
+
