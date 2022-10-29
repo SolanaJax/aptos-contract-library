@@ -1,0 +1,32 @@
+[package]
+name = "Valkyrie"
+version = "0.0.0"
+
+[addresses]
+#liquidswap = "0x190d44266241744264b964a37b8f09863167a12d3e70cda39376cfb4e3561e12"
+#AnimeSwapV1 = "0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c"
+#Aptoswap = "0xa5d3ac4d429052674ed38adc62d010e52d7c24ca159194d17ddc196ddb7e480b"
+#aux = '0xbd35135844473187163ca197ca93b2ab014370587bb0ed3befff9e902d6bb541'
+
+admin = "0x1e1db8fef7422178c501f4426947545d2c339d6021362d9659bcdeb683138a8b"
+Valkyrie = "0x1e1db8fef7422178c501f4426947545d2c339d6021362d9659bcdeb683138a8b"
+
+test_utils = "0x90"
+test_coin_destination = "0x20"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "ba5fa41f82bfe3d4e314d41c39fca77131e9f208" # "843b204dce971d98449b82624f4f684c7a18b991"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies]
+# Econia랑 CoinList는 dependency 문제로 배포가 안됨. 아마 로컬로 긁어와서 AptosFramework쪽 디펜던시 작업을 해야할듯
+#Econia = { git = "https://github.com/manahip/econia.git", subdir = "src/move/econia", rev = "5721a6586dec90c292b1655497247c3c1ebf51e5" }
+#CoinList = { git = "https://github.com/hippospace/aptos-coin-list.git", subdir = "", rev = "cc2100fb533f8b989a2c28c64a15c52007a91945" }
+Liquidswap = { local = "./interface/pontem-Liquidswap" }
+#basiq = { local = "./interface/basiq-basiq" }
+#ditto-staking = { local = "./interface/ditto-research" }
+#tortuga = { local = "./interface/tortuga" }
+Aptoswap = { local = "./interface/aptoswap" }
+aux = { local = "./interface/aux"}
+AnimeSwapV1 = { local = "./interface/animeswap"}
