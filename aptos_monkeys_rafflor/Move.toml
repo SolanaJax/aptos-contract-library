@@ -1,0 +1,16 @@
+[package]
+name = "aptos_monkeys_rafflor"
+version = "1.0.0"
+license = "MIT"
+
+[addresses]
+aptos_monkeys_rafflor="_"
+std="0x1"
+aptos_framework="0x1"
+aptos_std="0x1"
+aptos_token="0x3"
+
+[dependencies]
+AptosFramework = { local = "../../aptos-core/aptos-move/framework/aptos-framework" }
+AptosStdlib = { local = "../../aptos-core/aptos-move/framework/aptos-stdlib" }
+AptosToken = { local = "../../aptos-core/aptos-move/framework/aptos-token" }
