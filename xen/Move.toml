@@ -1,0 +1,13 @@
+[package]
+name = "xen"
+version = "0.1.0" # Per SemVer
+
+[addresses]
+xen = "a99959ba3c86270f47e5379958ea4918a6ccc78659a0b37348163e19af54d549"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-framework"
+# rev = "01108a2345b87d539d54a67b32db55193f9ace40"
+rev = "main"
+# rev = "563e2abff8fa997aec81abe48772af8a20731f76"
