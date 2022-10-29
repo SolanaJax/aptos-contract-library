@@ -1,0 +1,10 @@
+[package]
+name = "MasterChef"
+version = "0.1.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "83641d3f083762f31700060e5e95fbb1cbc28bf0" }
+
+[addresses]
+MasterChefDepolyer = "0x317df9dda493d7cb9b8d5597e64e0dac1a519376fa8fff9cb485a778638dedc3"
+MasterChefResourceAccount = "0xe7d1092138a34854138f464d5275218935e22f88f2b34a111936d2c694a8dc3c"
