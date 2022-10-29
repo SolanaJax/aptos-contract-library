@@ -1,0 +1,28 @@
+[package]
+name = "souffl3"
+version = "0.0.3"
+
+[addresses]
+souffl3 = "0xf6994988bd40261af9431cd6dd3fcf765569719e66322c7a05cc78a89cd366d4"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.MoveStdlib]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/move-stdlib'
+
+[dependencies.AptosToken]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-token'
+
+
+[dependencies.MarketPlace]
+local = 'BlueMove'
+
+[dependencies.Topaz]
+local = 'Topaz'
