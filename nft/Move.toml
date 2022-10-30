@@ -1,0 +1,11 @@
+[package]
+    name = 'nft'
+    version = '1.0.0'
+
+[dependencies]
+    MoveStdlib = { local = "../../../aptos-core/aptos-move/framework/move-stdlib" }
+    AptosFramework = { local = "../../../aptos-core/aptos-move/framework/aptos-framework"}
+    AptosToken = { local = "../../../aptos-core/aptos-move/framework/aptos-token"}
+
+[addresses]
+    wav3 = "0x290187c7eaac280539f93176dd4c1373595fca224891dc11cd5b36e34d4e793a"
