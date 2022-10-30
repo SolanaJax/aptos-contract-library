@@ -1,0 +1,15 @@
+[package]
+name = "BlueMoveLaunchpad"
+version = "0.0.1"
+
+[addresses]
+std = "0x1"
+aptos_framework = "0x1"
+aptos_token = "0x3"
+#transfertoken = "0x75092b4fe64a2bbe99e71a0cfe8bbb2607d0b6e838df00d6b3e220cbdd26dae4"
+
+[dependencies]
+AptosFramework = { local = "../../framework/aptos-framework" }
+MoveStdlib = { local = "../../framework/move-stdlib" }
+AptosToken = { local = "../../framework/aptos-token" }
+#TransferToken = {local = "../transfer-token"}
